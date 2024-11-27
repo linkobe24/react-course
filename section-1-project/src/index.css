@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #66cfe7;
+    --header-bg-color: #1e1f26;
+    --main-bg-color: #24282e;
+    --background-logo: #2c3036;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 90px;
+    background-color: var(--header-bg-color);
+    padding: 20px;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav > img {
+    width: 40px;
+    margin-right: 7px;
+}
+
+nav > span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Main */
+main {
+    padding: 60px 3ch;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 275px;
+    position: absolute;
+    bottom: 15%;
+    right: -135px;
+}
+
+main > h1 {
+    font-size: 2.4rem;
+}
+
+.facts-list {
+    list-style: none;
+    margin: 20px 40px;
+    max-width: 400px;
+}
+
+.facts-list > li {
+    position: relative;
+    padding: 10px;
+}
+
+.facts-list > li::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.facts-list > li:last-child::before {
+    top: 35%;
+}
