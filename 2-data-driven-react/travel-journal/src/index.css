@@ -1,0 +1,101 @@
+:root {
+    --header-bg: #f54f50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    height: 55px;
+    background-color: var(--header-bg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header > img {
+    height: 25px;
+    filter: invert(1);
+    margin-right: 10px;
+}
+
+header > h1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Card */
+.card {
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    width: 600px;
+}
+
+.img-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location .location-icon {
+    height: 10px;
+    filter: invert(36%) sepia(37%) saturate(5421%) hue-rotate(335deg)
+        brightness(103%) contrast(92%);
+    margin-right: 3px;
+}
+
+.location .country {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(26, 25, 25);
+    margin-right: 10px;
+}
+
+.location .link {
+    font-size: 11px;
+    color: gray;
+}
+
+.place {
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.description {
+    font-size: 12px;
+    color: rgb(26, 25, 25);
+    line-height: 1.4;
+}
